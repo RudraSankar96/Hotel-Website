@@ -33,6 +33,7 @@
         <h3>Deluxe Room</h3>
         <p>King size bed, WiFi, AC, Pool view, Breakfast included</p>
         <span class="price">₹4,500/night</span>
+        <a href="#" class="see-more-btn" onclick="openRoomGallery('deluxe')">See More Images</a>
         <a href="contact.html" class="btn">Book Now</a>
       </div>
 
@@ -42,6 +43,8 @@
         <h3>Executive Room</h3>
         <p>Queen size bed, WiFi, Work desk, Mini bar</p>
         <span class="price">₹3,200/night</span>
+        <a href="#" class="see-more-btn" onclick="openRoomGallery('executive')">See More Images</a>
+
         <a href="contact.html" class="btn">Book Now</a>
       </div>
 
@@ -51,11 +54,25 @@
         <h3>Suite</h3>
         <p>Luxury suite, Living area, Bathtub, Personal assistant</p>
         <span class="price">₹8,000/night</span>
+        <a href="#" class="see-more-btn" onclick="openRoomGallery('suite')">See More Images</a>
         <a href="contact.html" class="btn">Book Now</a>
       </div>
 
     </div>
   </section>
+
+  <!-- Room Gallery Modal -->
+<div class="room-gallery-popup" id="roomGallery">
+  <span class="close-btn" onclick="closeRoomGallery()">&times;</span>
+  <img id="galleryImage" src="" alt="Room Gallery">
+  <div class="nav-arrows">
+    <span class="prev" onclick="prevImage()">&#10094;</span>
+    <span class="next" onclick="nextImage()">&#10095;</span>
+  </div>
+</div>
+
+<script src="main.js"></script>
+
 
   <!-- Footer -->
   <footer class="footer">

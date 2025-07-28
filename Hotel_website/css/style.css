@@ -275,3 +275,57 @@ body {
   font-weight: bold;
   z-index: 10000;
 }
+.room-gallery-popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+.room-gallery-popup img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.nav-arrows {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.nav-arrows .prev,
+.nav-arrows .next {
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.see-more-btn {
+  display: inline-block;
+  margin: 10px 0;
+  color: #0077cc;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+}
