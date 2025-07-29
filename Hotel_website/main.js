@@ -90,3 +90,16 @@ document.querySelectorAll(".book-now-btn").forEach((btn) => {
 function closeBookingModal() {
   bookingModal.style.display = "none";
 }
+// Auto background slider for Hero section
+const heroSection = document.getElementById('hero');
+const heroImages = [
+  'images/hero1.jpg',
+  'images/hero2.jpg',
+  'images/hero3.jpg'
+];
+let heroIndex = 0;
+
+setInterval(() => {
+  heroIndex = (heroIndex + 1) % heroImages.length;
+  heroSection.style.backgroundImage = `url('${heroImages[heroIndex]}')`;
+}, 5000); // Change every 5 seconds
