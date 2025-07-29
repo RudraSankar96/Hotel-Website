@@ -93,9 +93,9 @@ function closeBookingModal() {
 // Auto background slider for Hero section
 const heroSection = document.getElementById('hero');
 const heroImages = [
-  'images/hero1.jpg',
-  'images/hero2.jpg',
-  'images/hero3.jpg'
+  'images/hero1.webp',
+  'images/hero2.webp',
+  'images/hero3.webp'
 ];
 let heroIndex = 0;
 
@@ -103,3 +103,13 @@ setInterval(() => {
   heroIndex = (heroIndex + 1) % heroImages.length;
   heroSection.style.backgroundImage = `url('${heroImages[heroIndex]}')`;
 }, 5000); // Change every 5 seconds
+const preloadImages = [
+  'images/hero1.webp',
+  'images/hero2.webp',
+  'images/hero3.webp'
+];
+
+preloadImages.forEach(src => {
+  const img = new Image();
+  img.src = src;
+});
