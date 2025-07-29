@@ -71,6 +71,29 @@
   </div>
 </div>
 
+<!-- Booking Popup Modal -->
+<div class="booking-modal" id="bookingModal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeBookingModal()">&times;</span>
+    <h2>Book Your Stay</h2>
+    <form>
+      <label>Room Type</label>
+      <input type="text" id="roomTypeInput" readonly>
+
+      <label>Check-In Date</label>
+      <input type="date" required>
+
+      <label>Check-Out Date</label>
+      <input type="date" required>
+
+      <label>Number of Guests</label>
+      <input type="number" min="1" max="10" required>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+</div>
+
 <script src="main.js"></script>
 
 
