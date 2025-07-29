@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Rudra Hotel</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Rudra Hotel</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Gallery Section -->
+  <section class="gallery">
+    <h2>Explore Our Hotel</h2>
+    <div class="gallery-grid">
+
+      <!-- Kitchen -->
+      <div class="gallery-item">
+        <img src="images/kitchen.jpg" alt="Kitchen" class="popup-img">
+        <div class="gallery-info">
+          <h3>Modern Kitchen</h3>
+          <p>Equipped with hygienic and professional-grade equipment to serve the best meals.</p>
+        </div>
+      </div>
+
+      <!-- Lobby -->
+      <div class="gallery-item">
+        <img src="images/lobby.jpg" alt="Lobby" class="popup-img">
+        <div class="gallery-info">
+          <h3>Hotel Lobby</h3>
+          <p>Spacious and elegant lobby area for a warm welcome and comfortable waiting.</p>
+        </div>
+      </div>
+
+      <!-- Restaurant -->
+      <div class="gallery-item">
+        <img src="images/restaurant.jpg" alt="Restaurant" class="popup-img">
+        <div class="gallery-info">
+          <h3>Restaurant</h3>
+          <p>Enjoy gourmet meals in our beautifully designed multi-cuisine restaurant.</p>
+        </div>
+      </div>
+
+      <!-- Garden -->
+      <div class="gallery-item">
+        <img src="images/garden.jpg" alt="Garden" class="popup-img">
+        <div class="gallery-info">
+          <h3>Green Garden</h3>
+          <p>Relax in our lush green garden with walking paths and peaceful vibes.</p>
+        </div>
+      </div>
+
+      <!-- Swimming Pool -->
+      <div class="gallery-item">
+        <img src="images/pool.jpg" alt="Swimming Pool" class="popup-img">
+        <div class="gallery-info">
+          <h3>Swimming Pool</h3>
+          <p>Outdoor pool with crystal clear water and poolside seating to unwind.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Image Popup Modal -->
+<div class="image-popup" id="imagePopup">
+  <span class="close-btn" onclick="closeImage()">&times;</span>
+  <img id="popupImage" src="" alt="Popup">
+</div>
+
+<script src="main.js"></script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Rudra Hotel & Resort. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
