@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/your-script-id/exec'; // Replace with your script URL
+const scriptURL = 'https://script.google.com/macros/s/AKfycbx-Rr45Ti9rs3Nt4pNnmpfV1EG2kUV4WIncQIgAE83odJqfMGFc_ntI1nT6stW6NFA0-g/exec'; // Replace with your script URL
 const form = document.getElementById('feedbackForm');
 
 form.addEventListener('submit', e => {
