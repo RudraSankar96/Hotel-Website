@@ -329,3 +329,47 @@ body {
   color: white;
   cursor: pointer;
 }
+/* Feedback Section */
+.feedback {
+  background: #f9f9f9;
+  padding: 60px 80px;
+  text-align: center;
+}
+
+.feedback h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.feedback form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feedback input,
+.feedback textarea {
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+.feedback button {
+  padding: 14px;
+  background: #0077cc;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.feedback button:hover {
+  background: #005fa3;
+}
