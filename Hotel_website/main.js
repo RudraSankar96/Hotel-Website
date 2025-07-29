@@ -74,3 +74,19 @@ const observer = new IntersectionObserver(entries => {
 });
 
 roomCards.forEach(card => observer.observe(card));
+// Booking Modal Logic
+const bookingModal = document.getElementById("bookingModal");
+const roomTypeInput = document.getElementById("roomTypeInput");
+
+document.querySelectorAll(".book-now-btn").forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    const roomName = btn.closest(".room-card").querySelector("h3").innerText;
+    roomTypeInput.value = roomName;
+    bookingModal.style.display = "flex";
+  });
+});
+
+function closeBookingModal() {
+  bookingModal.style.display = "none";
+}
