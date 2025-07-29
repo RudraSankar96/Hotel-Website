@@ -1,4 +1,4 @@
-/* Reset & Base */
+/* ================= Reset & Base ================= */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* Navbar */
+/* ================= Navbar ================= */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -28,6 +28,13 @@ body {
 .logo {
   font-size: 24px;
   font-weight: bold;
+  color: #333;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
   color: #333;
 }
 
@@ -47,7 +54,7 @@ body {
   color: #0077cc;
 }
 
-/* Hero Section */
+/* ================= Hero Section ================= */
 .hero {
   height: 90vh;
   display: flex;
@@ -61,6 +68,7 @@ body {
   background: url('../images/hero1.webp') no-repeat center center/cover;
   transition: background-image 1s ease-in-out;
 }
+
 .hero::after {
   content: "";
   position: absolute;
@@ -97,21 +105,73 @@ body {
   background: #005fa3;
 }
 
-/* About Section */
-.about {
-  padding: 60px 80px;
-  background: white;
+/* ================= Responsive Media Queries ================= */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    margin-top: 15px;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .logo {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
 }
 
-.about h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #222;
+/* ================= Mobile Menu Animation (Optional JS Support) ================= */
+.navbar .menu-toggle {
+  display: none;
 }
 
-.about p {
-  font-size: 18px;
-  max-width: 800px;
+@media (max-width: 768px) {
+  .navbar .menu-toggle {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Footer */
